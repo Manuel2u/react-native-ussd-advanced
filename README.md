@@ -7,7 +7,6 @@ Advanced USSD automation for React Native Android - The React Native equivalent 
 - ✅ **Multi-session USSD** with automatic dialog handling
 - ✅ **Accessibility Service** integration for reading responses
 - ✅ **Dual SIM support** - Select which SIM to use
-
 - ✅ **Retry logic** with configurable attempts
 - ✅ **Event-driven** architecture with real-time callbacks
 - ✅ **Full automation** - Send multiple messages in sequence
@@ -26,7 +25,38 @@ or
 yarn add react-native-ussd-advanced
 ```
 
-## Android Setup
+### Expo Installation
+
+If you're using Expo, the setup is automatic! Just add the plugin to your `app.json` or `app.config.js`:
+
+```json
+{
+  "expo": {
+    "plugins": [
+      "react-native-ussd-advanced"
+    ]
+  }
+}
+```
+
+Then rebuild your app:
+
+```bash
+npx expo prebuild
+# or
+npx expo run:android
+```
+
+The Expo plugin will automatically:
+- ✅ Add required Android permissions (`CALL_PHONE`, `READ_PHONE_STATE`)
+- ✅ Configure the accessibility service
+- ✅ Copy necessary XML resource files
+
+**Note:** Make sure you have `@expo/config-plugins` installed in your Expo project (it's usually included by default).
+
+## Android Setup (Bare React Native Only)
+
+If you're using a bare React Native project (not Expo), follow these manual setup steps:
 
 ### 1. Add permissions to `AndroidManifest.xml`
 
@@ -37,7 +67,7 @@ yarn add react-native-ussd-advanced
 
 ### 2. Add accessibility service
 
-Inside `<application>` tag:
+Inside `<application>` tag in `android/app/src/main/AndroidManifest.xml`:
 
 ```xml
 <service
@@ -52,6 +82,8 @@ Inside `<application>` tag:
     android:resource="@xml/ussd_service" />
 </service>
 ```
+
+**Note:** Expo users can skip this entire section as the plugin handles everything automatically.
 
 ## Usage
 
