@@ -34,13 +34,13 @@
         "dual-sim",
         "ussd-automation"
     ],
-    "repository": "https://github.com/yourusername/react-native-ussd-advanced",
+    "repository": "https://github.com/Manuel2u/react-native-ussd-advanced",
     "author": "Emmanuel Dodoo <emmanueldodoo94@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/yourusername/react-native-ussd-advanced/issues"
+        "url": "https://github.com/Manuel2u/react-native-ussd-advanced/issues"
     },
-    "homepage": "https://github.com/yourusername/react-native-ussd-advanced#readme",
+    "homepage": "https://github.com/Manuel2u/react-native-ussd-advanced#readme",
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
     },
