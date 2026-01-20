@@ -1,6 +1,6 @@
 {
     "name": "react-native-ussd-advanced",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Advanced USSD automation for React Native Android - Multi-session support, accessibility service integration, and dual SIM support",
     "main": "lib/commonjs/index",
     "module": "lib/module/index",
